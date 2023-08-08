@@ -10,12 +10,14 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: context.select(
-          (NotificationsBloc bloc) => Text("${bloc.state.status}"),
+          (NotificationsBloc bloc) => Text(
+            '${bloc.state.status}',
+          ),
         ),
         actions: [
           IconButton(
             onPressed: () {
-              context.read()<NotificationsBloc>().requestPermission();
+              context.read<NotificationsBloc>().requestPermission();
             },
             icon: const Icon(Icons.settings),
           ),

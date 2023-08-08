@@ -4,12 +4,20 @@ import 'package:push_app/config/router/app_router.dart';
 import 'package:push_app/config/theme/app_theme.dart';
 import 'package:push_app/presentation/blocs/notifications/notifications_bloc.dart';
 
-void main() {
-  runApp(MultiBlocProvider(providers: [
-    BlocProvider(
-      create: (_) => NotificationsBloc(),
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await NotificationsBloc.initializeFCM();
+
+  runApp(
+    MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (_) => NotificationsBloc(),
+        ),
+      ],
+      child: const MainApp(),
     ),
-  ], child: const MainApp()));
+  );
 }
 
 class MainApp extends StatelessWidget {
