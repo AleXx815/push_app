@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "715255030749",
+    "project_id": "flutter-push-app-5280e",
+    "storage_bucket": "flutter-push-app-5280e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715255030749:android:3e9c8a81e63b168f8ccc34",
+        "android_client_info": {
+          "package_name": "com.davidgomez.push_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715255030749-6epl8udu5ruf23flu6ud79u6cj9rcf8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtWhEpJO_eRHZZVRKwSAt0o-tID18iH_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715255030749-6epl8udu5ruf23flu6ud79u6cj9rcf8d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "715255030749-1nlifbdhp29d8ivjkiqjs02p0m35k5tv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pushApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
